@@ -1,0 +1,27 @@
+/* LH */
+button#hautDePage{
+    z-index: 50;
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    right: 1%;
+    bottom:1% ;
+    border-style: solid;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* button#hautDePage p{
+    padding: 5px;
+    margin: 0;
+} */
+
+button#hautDePage:hover{
+    background-color: white;
+    border-style: dotted;
+}
+
+/* button#hautDePage:active p{
+    border-style: dotted;
+    border-width: 3px;
+    padding: 5px;
+} */

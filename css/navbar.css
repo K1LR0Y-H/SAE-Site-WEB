@@ -1,0 +1,57 @@
+body {
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+nav img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    height: 46px;
+    width: auto;
+}
+
+nav {
+    background-color: #ecf0f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    /* Pour les animations */
+    z-index: 50;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: flex-start;
+    padding-inline-end: 20px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.content{
+    position: relative;
+    top:75px;
+}
+
+nav ul li:nth-child(2){
+    font-weight: bold;
+}

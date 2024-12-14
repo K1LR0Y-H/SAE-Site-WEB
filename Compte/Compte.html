@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Microsoft - Mon compte</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/navbar.css'>
+    <link rel="stylesheet" href="../css/boutton.css">
+    <link rel="stylesheet" type='text/css' media='screen' href='./css/style.css'>
+    <link rel="icon" href="img/icons8-microsoft-48.png">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="../accueil/accueil.html"><img src="../img/microsoft_logo.png" alt="logo de Microsoft"></a>
+            </li>
+            <li>
+                <a href="../accueil/accueil.html">Accueil</a>
+            </li>
+            <li>
+                <a href="../reglement/reglement.html">Règlement d'utilisation</a>
+            </li>
+            <li>
+                <a href="../Location/location.html">Louer une voiture</a>
+            </li>
+            <li>
+                <a href="../propose/propose.html">Se proposer</a>
+            </li>
+            <li>
+                <a href="../liste/liste.html">Chercher des co-voiturage</a>
+            </li>
+            <li>
+                <a href="./Compte.html"><img src="../img/UserLogo.svg" alt="icon utilisateur"></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="account-section">
+            <h1>Jhon Smith</h1>
+            <img src="../img/UserLogo.svg" alt="Photo de profil Microsoft">
+        </div>        
+        <div>
+            <input type="checkbox" id="COMPTE"> 
+            <label for="COMPTE" class="COMPTE-checkbox">Mon compte</label>
+            <div class="content-COMPTE-checkbox"> 
+                <table> <!--CONTENUE DU MON COMPTE-->
+                    <tr> 
+                        <th>Nom</th> 
+                        <td>Jhon</td> 
+                    </tr> 
+                    <tr> 
+                        <th>Prénom</th> 
+                        <td>Smith</td> 
+                    </tr> 
+                    <tr> 
+                        <th>Téléphone</th> 
+                        <td>0683364981</td> 
+                    </tr> 
+                    <tr> 
+                        <th>Photo</th> 
+                        <td><img src="img/jhon_smith.jpg" alt="Photo de Jhon Smith">
+                        </td> 
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" id="PROGRAMME"> 
+            <label for="PROGRAMME" class="PROGRAMME-checkbox">Programme</label>
+            <div class="content-PROGRAMME-checkbox"> 
+                <p>Vous n'avez aucune réservation pour le moment.</p> <!--CONTENUE DU PROGRAMME-->
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" id="HISTORIQUE"> 
+            <label for="HISTORIQUE" class="HISTORIQUE-checkbox">Historique</label>
+            <div class="content-HISTORIQUE-checkbox"> 
+                <p>Récent</p><!--CONTENUE DU HISTORIQUE-->
+                <table> 
+                    <tr> 
+                        <td><img src="img/voiture1.jpg" alt="Voiture 1" width="100"></td> 
+                        <td>McLaren</td> 
+                        <td>720S</td> 
+                        <td>Location courte</td> 
+                        <td>Une journée</td> 
+                        <td>1900€</td> 
+                    </tr> 
+                    <tr> 
+                        <td><img src="img/voiture2.jpg" alt="Voiture 2" width="100"></td> 
+                        <td>Fiat</td> 
+                        <td>500</td> 
+                        <td>Location medium</td> 
+                        <td>3 journées</td> 
+                        <td>90€</td> 
+                    </tr> 
+                    <tr> 
+                        <td><img src="img/voiture3.jpg" alt="Voiture 3" width="100"></td> 
+                        <td>Fiat</td> 
+                        <td>Multiplat</td> 
+                        <td>Location gratuite</td> 
+                        <td>1 mois</td> 
+                        <td>0€</td> 
+                    </tr>
+                </table>
+                <p>Voir plus</p>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" id="POINT"> 
+            <label for="POINT" class="POINT-checkbox">Point</label>
+            <div class="content-POINT-checkbox"> 
+                <table> <!--CONTENUE DU POINT-->
+                    <tr> 
+                        <th>Location 1</th> 
+                        <th>Location 2</th> 
+                        <th>Location 3</th> 
+                    </tr> 
+                    <tr> 
+                        <td>20</td> 
+                        <td>30</td> 
+                        <td>45</td> 
+                    </tr> 
+                    <tr> 
+                        <td>3h</td> 
+                        <td>5h40</td> 
+                        <td>8h</td> 
+                    </tr> 
+                    <tr> 
+                        <td>6€</td> 
+                        <td>11€</td> 
+                        <td>15€</td> 
+                    </tr> 
+                </table>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" id="RECOMPENSE"> 
+            <label for="RECOMPENSE" class="RECOMPENSE-checkbox">Récompense</label>
+            <div class="content-RECOMPENSE-checkbox"> 
+                <p>Vous n'avez pas encore de récompenses disponible pour le moment.</p> <!--CONTENUE DU RECOMPENSE-->
+            </div>
+        </div>
+    </div>
+    <div>
+        <form action="#">
+            <button id="hautDePage">↑ Retour en haut de page</button>
+        </form>
+    </div>
+    <footer> 
+        <div>
+            <img src="img/mail.jpg" alt="Dessin enveloppe">
+            <p>Par mail : <br>
+                <b>John.Doe@outlook.fr</b>
+            </p>
+        </div>
+        
+        <div>
+            <h1>Besoin d'assistance ? Prenez contact :</h1>
+        </div>
+        
+        <div>
+            <img src="img/phone.jpg" alt="Dessin téléphone">
+            <p>Par téléphone :<br>
+                <b> 01.10.01.10.01</b>
+            </p>
+        </div>
+    
+    </footer>
+</body>
+</html>

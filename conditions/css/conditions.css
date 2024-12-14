@@ -1,0 +1,81 @@
+/* LH */
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-weight: normal;
+    text-align: center;
+}
+
+h1{
+    align-self: center;
+    margin-left: 40%;
+}
+
+button#retour{
+    align-self: center;
+    background-color: #0078d4;
+    border-style: none;
+    color: white;
+    height: 50px;
+    border-radius: 5px;
+    border-color: unset;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.premier{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p:not(footer p){
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 1%;
+    padding: 10px;
+}
+
+div.modabouton{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.modabouton form{
+    display: flex;
+    justify-content: center;
+    margin-right: 20%;
+}
+
+.vide{
+    height: 70px;
+}
+
+
+/* Animation */
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p:not(footer p),h2,h1:not(footer h1),button#retour{
+    opacity: 0; 
+    animation: fade 0.5s ease forwards;
+}
+
+h1:not(footer h1),button#retour{
+    animation-delay:0.5s;
+}
+h2{animation-delay: 0.75s;}
+p:not(footer p){
+    animation-delay: 1s;
+}

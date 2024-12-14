@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Microsoft - Se propose</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/navbar.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/propose.css'>
+    <link rel="icon" href="img/icons8-microsoft-48.png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="../accueil/accueil.html"><img src="../img/microsoft_logo.png" alt="logo de Microsoft"></a>
+            </li>
+            <li>
+                <a href="../propose/propose.html">Se proposer</a>
+            </li>
+            <li>
+                <a href="../accueil/accueil.html">Accueil</a>
+            </li>
+            <li>
+                <a href="../reglement/reglement.html">Règlement d'utilisation</a>
+            </li>
+            <li>
+                <a href="../Location/location.html">Louer une voiture</a>
+            </li>
+
+            <li>
+                <a href="../liste/liste.html">Chercher des co-voiturages</a>
+            </li>
+            <li>
+                <a href="../paiement/paiement.html"><img src="../img/panier.png" alt="Panier avec logo Microsoft à l'intérieur"></a>
+            </li>
+            <li>
+                <a href="../connexion/connexion.html"><img src="../img/UserLogo.svg" alt="logo de l'utilisateur"></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="center">
+            <div class="form">
+                <h1>Se proposer</h1>
+                <div>
+                    <input type="text" placeholder="Adresse de destination">
+                </div>
+                <div>
+                    <select id="vehiculetype">
+                        <option value="">Type de véhicule</option>
+                        <option value="perso">Véhicule personnel</option>
+                        <option value="entreprise">Véhicule de l'entreprise</option>
+                    </select>
+                </div>
+                <div class=".range-container">
+                    <label for="capacite">Capacité du véhicule</label>
+                    <div class="range-values"> <span>2</span> <span>3</span> <span>4</span> <span>5</span> <span>6</span> </div>
+                    <input type="range" min="2" max="6" id="capacite" name="capacite">
+                </div>
+                <div>
+                <form action="../Location/confirm.html">    
+                    <button>
+                        <!-- <a href="../Location/confirm.html"> -->
+                        Se proposer
+                        <!-- </a> -->
+                    </button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <img src="img/mail.jpg" alt="Dessin enveloppe">
+            <p>Par mail : <br>
+                <b>John.Doe@outlook.fr</b>
+            </p>
+        </div>
+        
+        <div>
+            <h1>Besoin d'assistance ? Prenez contact :</h1>
+        </div>
+        
+        <div>
+            <img src="img/phone.jpg" alt="Dessin téléphone">
+            <p>Par téléphone :<br>
+                <b> 01.10.01.10.01</b>
+            </p>
+        </div>
+    
+    </footer>
+</body>
+</html>

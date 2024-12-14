@@ -1,0 +1,124 @@
+/* LH */
+/* Positions blocs */
+.vide{
+    height: 200px;
+    width: 100%;
+}
+
+
+/* Background */
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    background-image: url("../../img/background.jpg");
+    height: 100%;
+    width: 100%;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    backdrop-filter: blur(40px);
+    overflow: auto;
+}
+
+
+/* Bloc central */
+
+#blocPrincipal{
+    display: flex;
+    justify-content: center;
+}
+
+#blocPrincipal form{
+    width: 20%;
+    align-self: center;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows:0.5fr 1fr 1fr 1fr;
+    background-color: white;
+    overflow: auto;
+    padding: 20px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-style: none;
+
+    
+}
+
+#blocPrincipal form img{
+    grid-area: 1/1/2/2;
+    align-self: center;
+    height: 50%;
+    width:auto;
+}
+
+#blocPrincipal form h1{
+    grid-area: 2/1/3/2;
+}
+
+#blocPrincipal form input[type="email"]{
+    grid-area: 3/1/4/4;
+}
+
+#blocPrincipal form input[type="password"]{
+    grid-area: 4/1/5/4;
+}
+
+#blocPrincipal form input{
+    border:0;
+    border-bottom: 2px;
+    border-style: solid;
+    height: 50%;
+    width: auto;
+}
+
+#blocPrincipal form input:focus{
+    outline: none;
+    border-color:#0078d4;
+}
+
+#blocPrincipal form input:invalid{
+    border-color: red;
+}
+
+
+#blocPrincipal form button{
+    grid-area:5/3/6/4;
+    background-color: #0078d4;
+    color: white;
+    border-radius: 2px;
+    height: 40px;
+    border-style: none;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Détails */
+nav ul li:nth-child(2){   
+ font-weight: normal; 
+}
+
+/* Il est visiblement recommandé d'avoir des labels, même cachés (les aria-label des inputs servent aussi) */
+label{display: none;}
+
+/* Animation */
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#connexion{
+    opacity: 0;
+    animation: fade 0.5s ease forwards;
+}
+
+#connexion{
+    animation-delay: 0.25s;
+}

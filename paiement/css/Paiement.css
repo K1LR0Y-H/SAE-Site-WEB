@@ -1,0 +1,324 @@
+.paiement{margin-left: 15%;}
+
+
+/* Modifications générales */
+
+    /* Inputs */
+    input {
+        border-radius: 5px;
+    }
+
+.vide{height: 90px;}
+
+
+
+
+
+
+/* Image Panier */
+[alt="Logo Panier"]{
+    padding-left: 40%;
+    padding-right: 40%;
+    width: 20%;
+    height: 20%;
+}
+
+/* Carte */
+    #Carte{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 2fr;
+        width: auto;
+        border-radius: 10px;
+        padding: 5px;
+        margin-bottom: 2%;
+    }
+
+    #Carte img{
+        justify-self: center;
+        width: fit-content;
+        height: 50px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: grey;    
+    }
+
+    #Carte #un{grid-area: 2/1/2/3;}
+
+    #Carte #deux{grid-area: 3/1/3/3;}
+    #Carte #deux input{width: 98%;}
+
+    #Carte #trois{grid-area: 4/1/4/3;}
+
+    #Carte #quatre{grid-area: 5/1/5/3;}
+    #Carte #quatre input{width: 98%;}
+
+    #Carte #cinq{justify-self: center;}
+
+    #Carte #six{justify-self: center;}
+
+    #Carte #sept input{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    #Carte #huit input{
+        width: 15%;
+        margin-left: 42%;
+        margin-right: 42%;
+    }
+
+    #Carte div{
+        display: none;
+    }
+
+    input:checked+div #Carte div{
+        display: block;
+    }
+
+    
+
+/* Paypal */
+    #Paypal{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        border-radius: 5px;
+        width: auto;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+
+    #Paypal img{
+        width: 50%;
+        height: 45%;
+        justify-self: center;
+        border-style: solid;
+        border-color: grey;
+        border-width: 1px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    #Paypal div{
+        grid-area: 2/1/2/3;
+        margin-left: 20%;
+        margin-bottom: 1%;
+    }
+
+    #Paypal div{
+        display: none;
+    }
+
+    input:checked+div #Paypal div{
+        display: block;
+    }
+
+/* Paysafecard */
+
+    #Paysafecard{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        border-radius: 5px;
+        width: auto;
+        align-items: center;
+    }
+
+    #Paysafecard img{
+        width: 70%;
+        height: 50%;
+        justify-self: center;
+        border-style: solid;
+        border-color: grey;
+        border-width: 1px;
+        padding: 5px;
+    }
+
+
+
+
+/* Bouton "Payer" */
+#gridCorps{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+}
+
+#gridCorps div:first-child{
+    grid-area:1/2/1/3;
+}
+
+#gridCorps #MéthodesPaiement{
+    grid-area:2/1/2/3
+}
+
+#gridCorps #paiement{
+    grid-area: 1/4/1/5;
+}
+
+#gridCorps>div:first-child{
+    justify-self: center;
+    align-self: center;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+#gridCorps button{
+    justify-self: center;
+}
+
+p{
+    text-align: center;
+    margin-top: 1%;
+}
+
+#reset{
+    display: grid;
+    justify-items: center;
+}
+
+/* Boutton payer */
+#paiement{
+    height: 160px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+button[type="submit"]{
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-width: 1px;
+    font-size: 25px;
+    background-color: #0078d4;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-color: unset;
+    color: white;
+}
+
+button[type="submit"] a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{text-align: center;}
+
+/* Reset */
+#reset{
+    align-self: center;
+    grid-area: 3/2/3/3;
+    border-color: unset;
+    height: 50px;
+
+}
+
+button[type="reset"]{
+    background-color: #0078d4;
+    color: white;
+    height: 100%;
+    width: 50%;
+    border-radius: 15px;
+    border-color: unset;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Mise en forme avec les ombres */
+#Carte,#Paypal,#Paysafecard{
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-color: unset;
+    border-width: 0;
+}
+
+#MéthodesPaiement div:first-child{
+    border-width: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#MéthodesPaiement div img{
+    border-width: 0;
+}
+
+
+form input{
+    border:0;
+    border-bottom: 2px;
+    border-style: solid;
+    height: 50%;
+    width: auto;
+}
+
+form input:focus{
+    outline: none;
+    border-color:#0078d4;
+}
+
+form input:invalid{
+    border-color: red;
+}
+
+/* Animation */
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1,img[alt="Logo Panier"],#gridCorps div:first-child,#MéthodesPaiement,#paiement,#reset{
+    opacity: 0;
+    animation: fade 0.5s ease forwards;
+}
+
+h1,img[alt="Logo Panier"]{
+    animation-delay: 0.25s;
+}
+#gridCorps div:first-child{
+    animation-delay: 0.5s;
+}
+#MéthodesPaiement,#reset{
+    animation-delay: 1s;
+}
+#paiement{
+    animation-delay:1.25s;
+}
+
+/* Post Validator */
+#choixCB,#choixPP,#choixPS{
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.paiement{
+    width: 100%;
+    margin-bottom: 0.5%;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+
+
+#MéthodesPaiement input[type="radio"]:checked+div.paiement{
+    /* border-color: rgb(0, 120, 212);
+    border-width: 2px;
+    border-style: dashed; */
+    box-shadow: 0 0px 10px #0078d4;
+
+}

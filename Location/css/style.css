@@ -1,0 +1,363 @@
+.content {
+    left:8%;
+}
+
+/* CHECKBOX LE CONTENUE DES CHECKBOX QUE SI ELLES SONT COCHEE */
+/*VOITURE */
+.VOITURE-checkbox {
+    display: block;
+    width: 80%;
+    background-color: white;
+    color: #323130;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 1px solid #e1dfdd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-VOITURE-checkbox {
+    display:none;
+}
+
+#VOITURE:checked ~ .content-VOITURE-checkbox {
+    display: block;
+}
+
+#VOITURE {
+    display:none;
+}
+
+/* TROTINETTE */
+.TROTINETTE-checkbox {
+    display: block;
+    width: 80%;
+    background-color: white;
+    color: #323130;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 1px solid #e1dfdd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-TROTINETTE-checkbox {
+    display:none;
+}
+
+#TROTINETTE:checked ~ .content-TROTINETTE-checkbox {
+    display: block;
+}
+
+#TROTINETTE {
+    display:none;
+}
+/* SKATE */
+.SKATE-checkbox {
+    display: block;
+    width: 80%;
+    background-color: white;
+    color: #323130;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 1px solid #e1dfdd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-SKATE-checkbox {
+    display:none;
+}
+
+#SKATE:checked ~ .content-SKATE-checkbox {
+    display: block;
+}
+
+#SKATE {
+    display:none;
+}
+/* ROLLERS */
+.ROLLERS-checkbox {
+    display: block;
+    width: 80%;
+    background-color: white;
+    color: #323130;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 1px solid #e1dfdd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.content-ROLLERS-checkbox {
+    display:none;
+}
+
+#ROLLERS:checked ~ .content-ROLLERS-checkbox {
+    display: block;
+}
+
+#ROLLERS {
+    display:none;
+}
+/* VEHICULE */
+.VEHICULE-checkbox {
+    display: block;
+    width: 80%;
+    background-color: white;
+    color: #323130;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 1px solid #e1dfdd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-VEHICULE-checkbox {
+    display:none;
+}
+
+#VEHICULE:checked ~ .content-VEHICULE-checkbox {
+    display: block;
+}
+
+#VEHICULE {
+    display:none;
+}
+
+/* TABLE VOITURE */
+.content-VOITURE-checkbox table {
+    width: 80%;
+    margin: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+.content-VOITURE-checkbox th, td {
+    border: 1px solid #e1dfdd;
+    padding: 10px 15px;
+    text-align: left;
+}
+.content-VOITURE-checkbox th {
+    background-color: #f3f2f1;
+    color: #323130;
+    font-weight: normal;
+    border-bottom: 2px solid #e1dfdd;
+}
+.content-VOITURE-checkbox td {
+    background-color: #ffffff;
+}
+.content-VOITURE-checkbox table img {
+    max-width: 100px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.content-VOITURE-checkbox tr:hover td {
+    background-color: #edebe9
+}
+
+p:not(footer p) {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e1dfdd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 80%;
+}
+
+.content-VEHICULE-checkbox table {
+    width: 80%;
+    margin: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+.content-VEHICULE-checkbox th, td {
+    border: 1px solid #e1dfdd;
+    padding: 10px 15px;
+    text-align: left;
+}
+.content-VEHICULE-checkbox th {
+    background-color: #f3f2f1;
+    color: #323130;
+    font-weight: normal;
+    border-bottom: 2px solid #e1dfdd;
+}
+.content-VEHICULE-checkbox td {
+    background-color: #ffffff;
+}
+.content-VEHICULE-checkbox table img {
+    max-width: 100px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.content-VEHICULE-checkbox tr:hover td {
+    background-color: #edebe9
+}
+
+.account-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 20px;
+    background-color: #f3f2f1;
+    border: 1px solid #e1dfdd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+    margin-left: 200px;
+    width: 50%;
+}
+
+
+.account-section h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #323130;
+    margin-bottom: 20px;
+}
+
+
+.account-section img {
+    max-width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* BUTTON */
+/* 
+button#hautDePage{
+    z-index: 1000;
+    position: fixed;
+    width: 190px;
+    height: 50px;
+    right: 1%;
+    bottom:1% ;
+    border-style: solid;
+}
+button#hautDePage a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+button#hautDePage:hover{
+    background-color: white;
+    border-style: solid;
+}
+button#hautDePage a:active{
+    border-style: dotted;
+    border-width: 3px;
+
+} */
+
+form:not([action="#"]) { 
+    max-width: 500px; 
+    margin: 0 1%; 
+    padding: 20px; 
+    background-color: #ffffff; 
+    border: 1px solid #e1dfdd; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    margin-bottom: 15px;
+} 
+label { 
+    display: block; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+    color: #323130; 
+}
+select { 
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid #e1dfdd; 
+    border-radius: 4px; 
+    background-color: #ffffff; 
+    font-size: 1em; 
+    color: #323130; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+} 
+select:focus { 
+    border-color: #0078d4; 
+    outline: none; 
+} 
+form:not(form[action="#"]) button { 
+    width: 100%; 
+    padding: 15px; 
+    font-size: 1em; 
+    color: #ffffff; 
+    background-color: #0078d4; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+} 
+button:hover { 
+    background-color: #005a9e;
+}
+/* FOOTER */
+footer {
+    position: relative;
+    top: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 2px solid #e1dfdd;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+footer img {
+    margin-bottom: 10px;
+}
+
+footer img[alt="Dessin enveloppe"] {
+    width: 50px;
+    height: 50px;
+}
+
+footer img[alt="Dessin téléphone"] {
+    width: 50px;
+    height: 50px;
+}
+
+footer p, footer h1 {
+    margin: 0;
+    color: #323130;
+}
+
+footer b {
+    color: #0078d4;
+}
+
+/* Empêcher le débordement horizontal */
+body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}

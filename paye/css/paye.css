@@ -1,0 +1,72 @@
+/* LH */
+.vide{
+    height: 100px;
+}
+
+h1{
+    font-size: 75px;
+    margin-bottom: 1%;
+}
+
+p{
+    font-style: italic;
+    font-size: 25px;
+}
+
+p+a{
+    font-weight: bold;
+    color: black;
+    margin: 0.5%;
+    padding: 10px;
+
+}
+
+p+a:hover{
+    border-style: dashed;
+    border-color:#0078d4 ;
+}
+
+#blocCentral{
+    display: grid;
+    justify-items: center;
+    font-size: 20px;
+}
+
+/* Animation */
+@keyframes tourner {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#valide{
+    animation: tourner 1.25s ease forwards;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#blocCentral *:not(img){
+    opacity: 0;
+    animation: fade 0.5s ease forwards;
+}
+
+#blocCentral h1{
+    animation-delay: 0.5s;
+}
+
+#blocCentral p{
+    animation-delay:0.75s;
+}
+
+#blocCentral a{
+    animation-delay: 1s;
+}

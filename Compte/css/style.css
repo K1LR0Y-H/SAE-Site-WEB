@@ -1,0 +1,398 @@
+.content {
+    left:8%;
+}
+
+/* CHECKBOX LE CONTENUE DES CHECKBOX QUE SI ELLES SONT COCHEE */
+/*COMPTE */
+.COMPTE-checkbox {
+    display: block;
+    width: 80%;
+    background-color: white;
+    color: #323130;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 1px solid #e1dfdd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-COMPTE-checkbox {
+    display:none;
+}
+
+#COMPTE:checked ~ .content-COMPTE-checkbox {
+    display: block;
+}
+
+#COMPTE {
+    display:none;
+}
+
+/* PROGRAMME */
+.PROGRAMME-checkbox {
+    display: block;
+    width: 80%;
+    background-color: white;
+    color: #323130;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 1px solid #e1dfdd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-PROGRAMME-checkbox {
+    display:none;
+}
+
+#PROGRAMME:checked ~ .content-PROGRAMME-checkbox {
+    display: block;
+}
+
+#PROGRAMME {
+    display:none;
+}
+/* HISTORIQUE */
+.HISTORIQUE-checkbox {
+    display: block;
+    width: 80%;
+    background-color: white;
+    color: #323130;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 1px solid #e1dfdd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-HISTORIQUE-checkbox {
+    display:none;
+}
+
+#HISTORIQUE:checked ~ .content-HISTORIQUE-checkbox {
+    display: block;
+}
+
+#HISTORIQUE {
+    display:none;
+}
+/* POINT */
+.POINT-checkbox {
+    display: block;
+    width: 80%;
+    background-color: white;
+    color: #323130;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 1px solid #e1dfdd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.content-POINT-checkbox {
+    display:none;
+}
+
+#POINT:checked ~ .content-POINT-checkbox {
+    display: block;
+}
+
+#POINT {
+    display:none;
+}
+/* RECOMPENSE */
+.RECOMPENSE-checkbox {
+    display: block;
+    width: 80%;
+    background-color: white;
+    color: #323130;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 1px solid #e1dfdd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-RECOMPENSE-checkbox {
+    display:none;
+}
+
+#RECOMPENSE:checked ~ .content-RECOMPENSE-checkbox {
+    display: block;
+}
+
+#RECOMPENSE {
+    display:none;
+}
+
+/* MON COMPTE TABLE */
+.content-COMPTE-checkbox table {
+    width: 80%;
+    margin: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+.content-COMPTE-checkbox th, td {
+    border: 1px solid #e1dfdd;
+    padding: 10px 15px;
+    text-align: left;
+}
+.content-COMPTE-checkbox th {
+    background-color: #f3f2f1;
+    color: #323130;
+    font-weight: normal;
+    border-bottom: 2px solid #e1dfdd;
+}
+.content-COMPTE-checkbox td {
+    background-color: #ffffff;
+}
+.content-COMPTE-checkbox table img {
+    max-width: 100px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.content-COMPTE-checkbox tr:hover td {
+    background-color: #edebe9
+}
+
+/* PROGRAMME */
+.content-PROGRAMME-checkbox p {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e1dfdd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 80%;
+}
+
+/* HISTORIQUE */
+/* RECENT */
+.content-HISTORIQUE-checkbox p {
+    display: block;
+    width: 80%;
+    background-color: white;
+    color: #323130;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e1dde0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* HISTORIQUE */
+/* TABLE */
+
+.content-HISTORIQUE-checkbox table {
+    width: 80%;
+    margin: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+.content-HISTORIQUE-checkbox th, td {
+    border: 1px solid #e1dfdd;
+    padding: 10px 10px;
+    text-align: left;
+}
+.content-HISTORIQUE-checkbox th {
+    background-color: #f3f2f1;
+    color: #323130;
+    font-weight: normal;
+    border-bottom: 2px solid #e1dfdd;
+}
+.content-HISTORIQUE-checkbox td {
+    background-color: #ffffff;
+}
+.content-HISTORIQUE-checkbox table img {
+    max-width: 100px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+.content-HISTORIQUE-checkbox tr:hover td {
+    background-color: #edebe9;
+}
+/* HISTORIQUE */
+/* VOIR PLUS */
+
+.content-HISTORIQUE-checkbox p:last-of-type {
+    text-align: center;
+    width:10%;
+    margin: 20px 500px;
+}
+
+/* POINT */
+.content-POINT-checkbox table {
+    width: 80%;
+    margin: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+.content-POINT-checkbox th, td {
+    border: 1px solid #e1dfdd;
+    padding: 10px 10px;
+    text-align: left;
+}
+.content-POINT-checkbox th {
+    background-color: #f3f2f1;
+    color: #323130;
+    font-weight: normal;
+    border-bottom: 2px solid #e1dfdd;
+}
+.content-POINT-checkbox td {
+    background-color: #ffffff;
+}
+.content-POINT-checkbox table img {
+    max-width: 200px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.content-POINT-checkbox tr:hover td {
+    background-color: #edebe9;
+}
+
+/* RECOMPENSES */
+.content-RECOMPENSE-checkbox p {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e1dfdd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 80%;
+
+}
+
+/* COMPTE+IMG */
+.account-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 20px;
+    background-color: #f3f2f1;
+    border: 1px solid #e1dfdd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+    margin-left: 200px;
+    width: 50%;
+}
+
+
+.account-section h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #323130;
+    margin-bottom: 20px;
+}
+
+
+.account-section img {
+    max-width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* BUTTON */
+
+/* button#hautDePage{
+    z-index: 1000;
+    position: fixed;
+    width: 190px;
+    height: 50px;
+    right: 1%;
+    bottom:1% ;
+    border-style: solid;
+}
+button#hautDePage a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+button#hautDePage:hover{
+    background-color: white;
+    border-style: solid;
+}
+button#hautDePage a:active{
+    border-style: dotted;
+    border-width: 3px;
+
+} */
+/* FOOTER */
+footer {
+    position: relative;
+    top: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 2px solid #e1dfdd;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+footer img {
+    margin-bottom: 10px;
+}
+
+footer img[alt="Dessin enveloppe"] {
+    width: 50px;
+    height: 50px;
+}
+
+footer img[alt="Dessin téléphone"] {
+    width: 50px;
+    height: 50px;
+}
+
+footer p, footer h1 {
+    margin: 0;
+    color: #323130;
+}
+
+footer b {
+    color: #0078d4;
+}
+
+/* Empêcher le débordement horizontal */
+body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Surpasse le nav.css */
+nav ul li:nth-child(2){
+    font-weight: normal;
+}
+

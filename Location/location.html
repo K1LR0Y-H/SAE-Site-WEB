@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Microsoft - Location</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/navbar.css'>
+    <link rel="stylesheet" type='text/css' media='screen' href='./css/style.css'>
+    <link rel="stylesheet" href="../css/boutton.css">
+    <link rel="icon" href="img/icons8-microsoft-48.png">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="../accueil/accueil.html"><img src="../img/microsoft_logo.png" alt="Logo Microsoft"></a>
+            </li>
+            <li>
+                <a href="./location.html" id="first">Louer une voiture</a>
+            </li>
+            <li>
+                <a href="../accueil/accueil.html" class="active">Accueil</a>
+            </li>
+            <li>
+                <a href="../reglement/reglement.html">Règlement d'utilisation</a>
+            </li>
+            <li>
+                <a href="../propose/propose.html">Se proposer</a>
+            </li>
+            <li>
+                <a href="../liste/liste.html">Chercher des co-voiturage</a>
+            </li>
+            <li>
+                <a href="../paiement/paiement.html"><img src="../img/panier.png" alt="Panier avec logo Microsoft à l'intérieur"></a>
+            </li>
+            <li>
+                <a href="../connexion/connexion.html"><img src="../img/UserLogo.svg" alt="UserLogo"></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div>
+            <div class="account-section">
+                <h1>Louer un véhicule</h1>
+                <img src="img/location.jpg" alt="Photo de profil Microsoft">
+            </div>  
+            <input type="checkbox" id="VOITURE"> 
+            <label for="VOITURE" class="VOITURE-checkbox">Voitures</label>
+            <div class="content-VOITURE-checkbox">
+                <table>
+                    <tr> 
+                        <td><img src="img/super5.jpg" alt="Super 5" width="100"></td> 
+                        <td>Renaud</td> 
+                        <td>Super 5</td> 
+                        <td>Location medium</td> 
+                        <td>3 journées</td> 
+                        <td>12€</td> 
+                    </tr> 
+                    <tr> 
+                        <td><img src="img/nissan.jpg" alt="Nissan" width="100"></td> 
+                        <td>Nissan</td> 
+                        <td>Juke</td> 
+                        <td>Location medium</td> 
+                        <td>3 journées</td> 
+                        <td>18€</td> 
+                    </tr> 
+                </table>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" id="TROTINETTE"> 
+            <label for="TROTINETTE" class="TROTINETTE-checkbox">Trotinettes</label>
+            <div class="content-TROTINETTE-checkbox">
+                <p>Aucune réservation de ce type disponible pour le moment.</p>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" id="SKATE"> 
+            <label for="SKATE" class="SKATE-checkbox">Skates</label>
+            <div class="content-SKATE-checkbox">
+                <p>Aucune réservation de ce type disponible pour le moment.</p>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" id="ROLLERS"> 
+            <label for="ROLLERS" class="ROLLERS-checkbox">Rollers</label>
+            <div class="content-ROLLERS-checkbox">
+                <p>Aucune réservation de ce type disponible pour le moment.</p>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" id="VEHICULE"> 
+            <label for="VEHICULE" class="VEHICULE-checkbox">Véhicules d'entreprise</label>
+            <div class="content-VEHICULE-checkbox">
+                <table>
+                    <tr> 
+                        <td><img src="img/voiture_entr1.jpg" alt="Super 5" width="100"></td> 
+                        <td>volkswagen</td> 
+                        <td>polo </td> 
+                        <td>Location medium</td> 
+                        <td>3 journées</td> 
+                        <td>12€</td> 
+                    </tr> 
+                    <tr> 
+                        <td><img src="img/voiture_entr2.jpg" alt="Nissan" width="100"></td> 
+                        <td>BMW
+                        <td>i6</td> 
+                        <td>Location medium</td> 
+                        <td>3 journées</td> 
+                        <td>18€</td> 
+                    </tr> 
+                </table> 
+            </div>
+        </div>
+        <h1>Formulaire de Location de Véhicule</h1> 
+        <form action="./confirm.html"> 
+            <!-- Sélection du type de véhicule -->
+            <label for="vehicle-type">Type de Véhicule :</label> 
+            <select id="vehicle-type" name="vehicle-type" required> 
+                <option value="" disabled selected>Choisir un type</option>
+                <option value="voiture">Voiture</option> 
+                <option value="trotinette">Trotinette</option> 
+                <option value="skate">Skate</option> 
+                <option value="rollers">Rollers</option> 
+                <option value="vehicule-entreprise">Véhicule d'Entreprise</option> 
+            </select> 
+            <br><br> 
+            <!-- Sélection du type de location --> 
+            <label for="rental-type">Type de Location :</label> 
+            <select id="rental-type" name="rental-type" required> 
+                <option value="" disabled selected>Choisir un type</option>
+                <option value="courte">Courte</option> 
+                <option value="medium">Medium</option> 
+                <option value="longue">Longue</option> 
+            </select> 
+            <br><br> 
+            <!-- Bouton de soumission --> 
+            <button type="submit">Soumettre</button> 
+        </form>
+        
+    </div>
+
+
+    <form action="#">
+        <button id="hautDePage">↑ Retour en haut de page</button>
+    </form>
+    
+    <footer>
+        <div>
+            <img src="img/mail.jpg" alt="Dessin enveloppe">
+            <p>Par mail : <br>
+                <b>John.Doe@outlook.fr</b>
+            </p>
+        </div>
+        
+        <div>
+            <h1>Besoin d'assistance ? Prenez contact :</h1>
+        </div>
+        
+        <div>
+            <img src="img/phone.jpg" alt="Dessin téléphone">
+            <p>Par téléphone :<br>
+                <b> 01.10.01.10.01</b>
+            </p>
+        </div>
+    
+    </footer>
+</body>
+</html>

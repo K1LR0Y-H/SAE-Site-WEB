@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Paiement</title>
+    <link rel="icon" href="../img/icons8-microsoft-48.png">
+    <link rel="stylesheet" href="./css/Paiement.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/boutton.css">
+</head>
+<body>
+    <main>
+    <form   action="../paye/paye.html">
+    <div id="navbar">
+        <nav>
+            <ul>
+                <li>
+                    <img src="../img/microsoft_logo.png" alt="Logo Microsoft">
+                </li>
+                <li>
+                    <a href="./paiement.html"><img src="../img/panier.png" alt="Panier avec logo Microsoft à l'intérieur"></a>
+                </li>
+                <li>
+                    <a href="../accueil/accueil.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="../reglement/reglement.html">Règlement d'utilisation</a>
+                </li>
+                <li>
+                    <a href="../Location/location.html">Louer une voiture</a>
+                </li>
+                <li>
+                    <a href="../propose/propose.html">Se proposer</a>
+                </li>
+                <li>
+                    <a href="../liste/liste.html">Chercher des co-voiturages</a>
+                </li>
+
+                <li>
+                    <a href="../connexion/connexion.html"><img src="../img/UserLogo.svg" alt="Logo de compte utilisateur"></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content"></div>     
+    </div>
+    
+    <div class="vide"></div>
+
+        <h1>Votre panier</h1>
+        
+        <img src="../img/panier.png" alt="Logo Panier">
+        
+        <div id="gridCorps">    
+            <div>    
+            <h2>Méthodes de paiement</h2>
+            <p>(Cliquez sur le nom pour sélectionner et continuer)</p>
+            </div>
+            <div id="MéthodesPaiement">
+
+                <input type="radio" id="choixCarte" name="choix" value="carte"  required>
+                <div class="paiement" >
+                    <div id="Carte">
+                    <!-- <label for="choixCarte" id="Carte"> -->
+                        <img src="../img/mastercardvisa.jpg" alt="Logo MasterCard/Visa">
+                        <label for="choixCarte" id="choixCB">Carte </label>
+
+                            <div id="un">
+                                <label for="NumCarte">Numéro de carte :</label>
+                            </div>
+                            <div id="deux">
+                                <input type="tel" 
+                                id="NumCarte" 
+                                name="NumCarte" 
+                                pattern="[0-9\s]{13,19}"  
+                                maxlength="19" 
+                                placeholder="XXXX XXXX XXXX XXXX" 
+                                aria-label="4 suites de 4 digits"
+                                value="1234 5678 9101 1121"
+                                required>
+                                <!-- Pattern : Chiffre ou espaces, entre 13 (pas d'espaces) et 19 caractères -->
+                                <!-- inputmode="numeric" rejeté par le validator -->
+                                <!-- autocomplete="cc-number" rejeté par le validator à cause du type tel,  le fix serait de type number -->
+
+                            </div>
+                            <div id="trois">
+                                <label for="TituCarte">Titulaire de la carte :</label>
+                            </div>
+                            
+                            <div id="quatre">
+                                <input type="text"
+                                id="TituCarte"
+                                name="TituCarte"
+                                autocomplete="cc-name"
+                                aria-label="Le nom et prénom qui figurent sur la carte"
+                                placeholder="J.Doe"
+                                value="John Doe"
+                                required>
+                                <!-- inputmode="text" rejeté par le validator -->
+                            </div>
+                            
+                        <div id="cinq">
+                            <label for="DateExpi">Date d'expiration :</label>
+                            
+                        </div>    
+                        <div id="six">
+                            <label for="CVC">Cryptogramme CVC :</label>
+                        </div>
+                        <div id="sept">
+                            <input type="month"
+                                id="DateExpi"
+                                name="DateExpi"
+                                autocomplete="cc-exp"
+                                aria-label="Le mois et l'année d'expiration de la carte"
+                                value="2025-05"
+                                required>
+                                <!-- inputmode="numeric" rejeté par le validator -->
+                                <!-- placeholder="MM/YY" et maxlength="5" rejeté -->
+
+
+                        </div>
+                        <div id="huit">
+                            <input type="text"
+                            id="CVC"
+                            name="CVC"
+                            autocomplete="cc-csc"
+                            aria-label="Le nom et prénom qui figurent sur la carte"
+                            placeholder="CVC"
+                            maxlength="3"
+                            pattern="{[0-9],[0-9],[0-9]}"
+                            value="123"
+                            required>
+                            <!-- inputmode="text" rejeté -->
+
+
+                        </div>
+                    <!-- </label> -->
+                    </div>
+                </div>
+                
+
+
+
+                <input type="radio" id="choixPaypal" name="choix" value="paypal" required>
+                
+                <div class="paiement">
+                    <div id="Paypal">
+                        <img src="../img/paypal.png" alt="Logo Paypal">
+                        <label for="choixPaypal" id="choixPP">Paypal (+5%) </label> 
+                            <div>
+                                <label for="sauvInfo">Sauvegarder pour votre prochain achat ?</label>
+                                <input id="sauvInfo" type="checkbox" >
+                            </div>
+                        </div>
+                </div>
+
+
+
+                <input type="radio" id="choixPaysafecard" name="choix" value="paysafecard" required>
+                    <div class="paiement" >
+                        <div id="Paysafecard">
+                            <img src="../img/paysafecard.svg" alt="Logo Paysafecard">
+                            <label  for="choixPaysafecard" id="choixPS">Paysafecard</label>
+                        </div>
+                    </div>
+
+                
+            </div>
+            
+            <div id="paiement">
+                
+                    <button type="submit">Procéder au paiement</button>
+                    <!-- Problème : Le bouton nécessite le remplissage des coordonnées Bancaires
+                     même si une autre méthode de paiement est choisie. Il semblerait nécessaire
+                     d'utiliser du JavaScript pour règle ce problème -->
+                <p>
+                    En cliquant sur ce bouton, vous acceptez les <br>
+                    <a href="../conditions/conditions.html">Conditions générales de vente</a>
+                </p>
+            </div>
+            <div id="reset">    
+                <button type="reset" value="Reset">Remettre à zéro</button>
+            </div>
+        </div>
+
+        <div class="vide"></div>
+
+
+
+    </form>
+
+    <form action="#">
+        <button id="hautDePage">↑ Retour en haut de page</button>
+    </form>    
+
+</main>
+</body>
+
+
+</html>

@@ -1,0 +1,150 @@
+/* LH */
+div#Titre{
+   display: grid; 
+   grid-template-columns: 1fr 3fr;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+   margin-bottom: 100px;
+   font-size: 23px;
+}
+
+div#Titre p:nth-child(2){
+    grid-row: 2;
+    grid-column: 1;
+}
+
+div#Titre p:nth-child(3){
+    grid-row: 3;
+    grid-column: 1;
+}
+
+div#Titre img{
+    object-fit: cover;
+    grid-area: 1/2/4/3;
+    width: 100%;
+    height: 90%;
+    padding-top: 2%;
+    border-radius: 5px;
+    
+}
+
+p{
+    margin-right: 2%;
+}
+
+
+/* Divs */
+#Bloc1~div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+
+
+}
+    /* Images */
+ 
+
+    #PremierLien img,#SecondLien img{
+        width: 90%;
+        height: 90%;
+        border-radius: 35px;
+        margin: 5%;
+        margin-top: 3%;
+        border-style: solid;
+        border-width: 2px;
+        border-color: whitesmoke;
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+
+    }
+
+/* Sections du div */
+#Bloc1~div section:not(.vide){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    border-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    
+}
+
+body a{
+text-decoration: none;
+color: black;}
+
+#Bloc1~div #PremierLien a img{
+    display: grid;
+    grid-column-start:1;
+    grid-column-end: 3;
+
+}
+
+
+/* Footer */
+
+/* Test pour gerer la navbar */
+#vide1{
+    height: 100px;
+}
+
+/* Réglement */
+
+#Bloc1 a{
+    text-decoration: none;
+    color: black;
+}
+
+#Bloc1 section h2{
+    text-align: center;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-width: 1px;    
+}
+
+
+#Titre h1{
+    margin-right: 20%;
+}
+
+/* Tentative fadeIn */
+
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#Titre,#Bloc1>section,#PremierLien,#SecondLien{
+    opacity: 0;
+    animation: fade 0.6s ease forwards;
+}
+#Titre{
+    animation-delay: 0.25s;
+}
+#Bloc1>section{
+    animation-delay: 0.5s;
+}
+#PremierLien{
+    animation-delay: 1s;
+}
+#SecondLien{
+    animation-delay: 1.5s;
+}
+
+
+
+
+

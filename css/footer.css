@@ -1,0 +1,31 @@
+/* LH et UP */
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid #e1dfdd;
+
+}
+
+footer p, footer h1 {
+    margin: 0;
+    color: #323130;
+}
+
+footer b {
+    color: #0078d4; 
+}
+
+footer img[alt="Dessin enveloppe"]{
+    margin-top: 5%;
+    width:25% ;
+    height:20% ;
+}
+
+footer img[alt="Dessin téléphone"]{
+    width: 10%;
+    height: 25%;
+    margin-top: 4%;
+}

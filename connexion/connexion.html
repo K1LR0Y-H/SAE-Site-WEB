@@ -1,0 +1,77 @@
+<!-- LH -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+    <link rel="icon" href="../img/icons8-microsoft-48.png">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="./css/connexion.css">
+    <link rel="stylesheet" href="../css/boutton.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+    <div id="NavBar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../accueil/accueil.html"><img src="../img/microsoft_logo.png" alt="Logo Microsoft"></a>
+                </li>
+                <li>
+                    <a href="../accueil/accueil.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="../reglement/reglement.html">Règlement d'utilisation</a>
+                </li>
+                <li>
+                    <a href="../Location/location.html">Louer une voiture</a>
+                </li>
+                <li>
+                    <a href="../propose/propose.html">Se proposer</a>
+                </li>
+                <li>
+                    <a href="../liste/liste.html">Chercher des co-voiturages</a>
+                </li>
+                <li>
+                    <a href="../paiement/paiement.html"><img src="../img/panier.png" alt="Panier avec logo Microsoft à l'intérieur"></a>
+                </li>
+                <li>
+                    <a href="../connexion/connexion.html"><img src="../img/UserLogo.svg" alt="Logo de compte utilisateur"></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content"></div>        
+    </div>
+    <main>
+        <div class="vide"></div>
+        <div id="blocPrincipal">
+            <form id="connexion" method="post" action="../Compte/Compte.html">
+                <img src="../img/microsoft_logo.png" alt="Logo de Microsoft">
+                <h1>Connexion</h1>
+                <label for="userEmail">E-mail</label>
+                <input type="email"
+                       id="userEmail" 
+                       name="userEmail"
+                       placeholder="Entrez votre adresse e-mail"
+                       value="JhonSmith@outlook.fr"
+                       aria-label="Champ pour fournir son adresse mail"
+                       title="adresse@mail.url"
+                       form="connexion"
+                       required>
+                
+                <label for="userMotDePasse">Mot de passe</label>
+                <input type="password"
+                       id="userMotDePasse" 
+                       name="userMotDePasse"
+                       placeholder="Entrez votre mot de passe"
+                       value="jamesT0WN43V3R!" 
+                       maxlength="20"
+                       aria-label="Champ pour remplir son mot de passe, maximum 20 caractères"
+                       title="Mot de passe de 20 caractères"
+                       required>
+                <button>Suivant</button>
+            </form>
+        </div>
+    </main>
+</body>

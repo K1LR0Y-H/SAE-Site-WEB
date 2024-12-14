@@ -1,0 +1,133 @@
+/* Style global */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f2f1;
+    color: #323130;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Conteneur principal */
+.content {
+    background-color: #ffffff;
+    border: 1px solid #e1dfdd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Centrer le contenu */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style du formulaire */
+.form {
+    width: 100%;
+}
+
+/* Titres */
+h1 {
+    font-size: 2em;
+    color: #0078d4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Champs de saisie */
+input[type="text"], select, input[type="range"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #e1dfdd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+}
+
+/* Bouton */
+button>a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #0078d4;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+button:hover {
+    background-color: #005a9e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background-color: #004578;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    accent-color: #0078d4;
+
+}
+
+.range-container { 
+    width: calc(100% - 20px); 
+    margin: 10px 0; 
+} 
+
+.range-values { 
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 5px; 
+    font-size: 0.8em; 
+    color: #0078d4; 
+}
+
+footer {
+    position: relative;
+    top: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 2px solid #e1dfdd;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+footer img {
+    margin-bottom: 10px;
+}
+
+footer img[alt="Dessin enveloppe"] {
+    width: 50px;
+    height: 50px;
+}
+
+footer img[alt="Dessin téléphone"] {
+    width: 50px;
+    height: 50px;
+}
+
+footer p, footer h1 {
+    margin: 0;
+    color: #323130;
+}
+
+footer b {
+    color: #0078d4;
+}
